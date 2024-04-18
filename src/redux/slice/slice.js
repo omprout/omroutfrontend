@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const fetchData = createAsyncThunk("fetchData", async () => {
   try {
-    const response = await axios.get("/api/portfolio/get-portfolio-data");
+    const response = await axios.get("https://omroutbackend.onrender.com/api/portfolio/get-portfolio-data");
     return response.data;
   } catch (error) {
     return error.response.data;
