@@ -34,7 +34,7 @@ const Contact = () => {
     event.preventDefault();
     console.log("Messege send successfully");
     try {
-      const response = await fetch("/api/email/register", {
+      const response = await fetch("https://omroutbackend.onrender.com/api/email/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
