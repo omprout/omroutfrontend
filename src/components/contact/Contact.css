@@ -192,14 +192,21 @@ span {
   .contact{
     overflow-x: hidden;
   }
-  .contactMe{
-  }
 
 }
 
 @media (max-width: 600px){
   .nameEmail {
     flex-direction: column;
+  }
+  .contactField{
+    min-width: 50%;
+  }
+  .nameEmail{
+    width: 70%;
+  }
+  .subject{
+    width: 70%;
   }
 }
 
