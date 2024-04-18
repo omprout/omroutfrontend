@@ -70,7 +70,7 @@ const Project = () => {
       <div className="headerPart">
         <span className="subHeading">ACCOMPLISHMENTS</span>
         <h2 className="heading">My Projects</h2>
-        <p className="projectParagraph">{description}</p>
+        <p className="projectParagraph" style={{ textAlign: "center" }}>{description}</p>
       </div>
       {/* ########################################## */}
       <div className="projects">

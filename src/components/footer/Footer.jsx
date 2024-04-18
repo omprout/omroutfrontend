@@ -5,7 +5,7 @@ const Footer = () => {
   return (
       <div className='footer'>
           <div className="footer_child">
-            <h1>Copyright ©2024 All rights reserved | This template is made with ❤️ by OPR</h1> 
+            <h1 style={{ textAlign: "center" }}>Copyright ©2024 All rights reserved | This template is made with ❤️ by OPR</h1> 
           </div>
     </div>
   )

@@ -34,18 +34,21 @@ const Contact = () => {
     event.preventDefault();
     console.log("Messege send successfully");
     try {
-      const response = await fetch("https://omroutbackend.onrender.com/api/email/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          text,
-          textarea,
-        }),
-      });
+      const response = await fetch(
+        "https://omroutbackend.onrender.com/api/email/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            text,
+            textarea,
+          }),
+        }
+      );
       console.log(response);
       setShowSuccessMessage(true);
 
@@ -90,14 +93,17 @@ const Contact = () => {
     return <div className="contact2">No data available</div>;
   }
 
-  const { address, phone, description, emailID, website } = contactData.contact[0];
+  const { address, phone, description, emailID, website } =
+    contactData.contact[0];
 
   return (
     <div className="contact">
       <div className="contactHeading">
         <span className="subHeading">CONTACT US</span>
         <h2 className="heading">Have a Project?</h2>
-        <p className="contactParagraph">{description}</p>
+        <p className="contactParagraph" style={{ textAlign: "center" }}>
+          {description}
+        </p>
       </div>
       {/* ################################################################# */}
       <div className="contactMe">
@@ -203,8 +209,5 @@ const Contact = () => {
     </div>
   );
 };
-
-
-
 
 export default Contact;

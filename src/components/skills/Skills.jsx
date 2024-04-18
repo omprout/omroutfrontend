@@ -43,7 +43,7 @@ console.log(skillData);
       <div className="skillsHeading">
         <span className="subHeading">SKILLS</span>
         <h2 className="heading">My Skills</h2>
-        <p className="skillsParagraph">{description}</p>
+        <p className="skillsParagraph" style={{ textAlign: "center" }}>{description}</p>
       </div>
       {/* ************************************* */}
       <div className="mainTable">

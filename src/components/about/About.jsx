@@ -50,7 +50,7 @@ const About = () => {
       <div className="bio">
         <p>MY INTRO</p>
         <h1>About Me</h1>
-        <p>{description}</p>
+        <p style={{ textAlign: "center" }} >{description}</p>
         <ul>
           <li>
             <span>Name:</span>
