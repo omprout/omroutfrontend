@@ -58,7 +58,7 @@ const AdminHome = () => {
 
   const update = async () => {
     try {
-      const response = await axios.post("/api/portfolio/update-skill-data", {
+      const response = await axios.post("https://omroutbackend.onrender.com/api/portfolio/update-skill-data", {
         _id: adminSkillData.skill[0]._id,
         description: descriptionInput,
       });

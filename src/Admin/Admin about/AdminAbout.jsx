@@ -71,7 +71,7 @@ const AdminAbout = () => {
   const Update = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("/api/portfolio/update-about-data", {
+      const response = await axios.post("https://omroutbackend.onrender.com/api/portfolio/update-about-data", {
         _id: adminAboutData.about[0]._id,
         description: Description || description,
         src: ImageSrc || src,

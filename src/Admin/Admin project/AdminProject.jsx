@@ -111,7 +111,7 @@ const AdminProject = () => {
   const Update = async(event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("/api/portfolio/update-project-data", {
+      const response = await axios.post("https://omroutbackend.onrender.com/api/portfolio/update-project-data", {
         _id: ProjectData.project[0]._id,
         description: Description,
         link1: Link1,
