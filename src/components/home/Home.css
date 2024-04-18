@@ -1,0 +1,34 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    box-sizing: border-box;
+}
+#root > div > div > div.profession > p{
+    font-size: 3rem; /* Set the color of the h1 element */
+    font-family: 'Playfair Display', serif; /* Apply the specified font family */
+    margin-bottom: 20px; /* Add some margin for spacing */
+}
+#root > div > div > div.profession > h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      color: #fff;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 27% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  

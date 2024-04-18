@@ -1,0 +1,193 @@
+.skills {
+  height: max-content;
+  width: 100%;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skillsHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.subHeading {
+  color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.heading {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1.5rem !important;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+.skillsParagraph {
+  color: #fff;
+  margin-bottom: 4rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+/* *********************** */
+.mainTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.skillsTable1 {
+    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.skillsTable2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.Table {
+  height: 21.11rem;
+  width: 21.87rem;
+  background-image: linear-gradient(43deg,#4158d0 0%,#c850c0 46%,#ffcc70 100%);
+  box-shadow: 0 0 10px #362b2b;
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Table > h2{
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 900;
+    margin-bottom: 1.5rem ;
+    font-size: 1.25rem;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.one>.progressbar{
+  border-radius: 50%;
+  height: 9.37rem;
+  width: 9.37rem;
+  background: conic-gradient(#fff 335deg, #c850c0 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px #362b2b;
+}
+.two>.progressbar{
+  border-radius: 50%;
+  height: 9.37rem;
+  width: 9.37rem;
+  background: conic-gradient(#fff 320deg, #c850c0 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px #362b2b;
+}
+.three>.progressbar{
+  border-radius: 50%;
+  height: 9.37rem;
+  width: 9.37rem;
+  background: conic-gradient(#fff 290deg, #c850c0 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px #362b2b;
+}
+.four>.progressbar{
+  border-radius: 50%;
+  height: 9.37rem;
+  width: 9.37rem;
+  background: conic-gradient(#fff 300deg, #c850c0 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px #362b2b;
+}
+.five>.progressbar{
+  border-radius: 50%;
+  height: 9.37rem;
+  width: 9.37rem;
+  background: conic-gradient(#fff 310deg, #c850c0 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px #362b2b;
+}
+.six>.progressbar{
+  border-radius: 50%;
+  height: 9.37rem;
+  width: 9.37rem;
+  background: conic-gradient(#fff 315deg, #c850c0 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px #362b2b;
+}
+.percent{
+  position: absolute;
+  z-index: 3;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 700 !important;
+  font-size: 2rem;
+  font-family: "Poppins", Arial, sans-serif;
+
+}
+.progressbar::after{
+  content: "";
+  height: 8rem;
+  width: 8rem;
+  background-image: linear-gradient(43deg,#4158d0 0%,#c850c0 46%,#ffcc70 100%);
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+
+
+@media (max-width: 998px) {
+    .skillsTable1{
+        flex-direction: column;
+    }
+    .skillsTable2{
+        flex-direction: column;
+    }
+ 
+}
+.skills2{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(43deg,#4158d0 0%,#c850c0 46%,#ffcc70 100%);
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;1,6..12,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;1,6..12,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100;200;300;400&display=swap');
+
+
+.navChild{
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    width: 100%;
+    height: 7vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px ;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.logo{
+    margin-left: 4rem;
+    font-family: 'Cedarville Cursive', cursive;
+    color: #fff; 
+    font-size: 3rem;
+    font-weight: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 5px 10px ;
+}
+.list{
+    padding-left: 0;
+    width: 50vmax;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 5vmax;
+    text-align: center;
+    margin-right: 0;
+}
+.list >  li {
+    text-align: none;
+    list-style: none;
+}
+ ul > li > a{
+    text-decoration: none;
+    font-size: 1rem;;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;;
+}
+ul > li > a:hover{
+    transition: 2.5s smooth;
+    color: #090909; 
+    opacity: 0.8; 
+    border-bottom: 2px solid #040404;
+}
+.mobile_list {
+  padding-left: 0;
+  position: absolute;
+  top: 5rem;
+  height: 16rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 5px ;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  z-index: 1;
+  }
+  
+  .mobile_list li {
+    opacity: 1;
+    transform: translateY(0);
+    
+    list-style: none;
+  }
+  
+  .mobile_list > li > a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .mobile_list > li > a:hover {
+    transition: 2.5s smooth;
+    color: #090909;
+    opacity: 0.8;
+    border-bottom: 2px solid #040404;
+  }
+
+.profession{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#root > div > div > div > div.profession > p{
+    font-size: 3rem; /* Set the color of the h1 element */
+    font-family: 'Playfair Display', serif; /* Apply the specified font family */
+    margin-bottom: 20px; /* Add some margin for spacing */
+}
+#root > div > div > div > div.profession > h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      color: #fff;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 27% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .hamburger_menu {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 10rem;
+    font-size: 2rem;
+    display: none;
+  }
+  @media (max-width:998px){
+ 
+    .list{
+        display: none;
+
+    }
+    .hamburger_menu {
+        display: inline-block;
+        right: 2rem;
+    }
+    .logo{
+        font-size: 2rem;
+        margin-left: 1.5rem;
+    }
+    #root > div > div > div > div.profession > div{
+        font-size: 2rem;
+    }
+    #root > div > div > div > div.profession > h1{
+        font-size: 2rem;
+    }
+  }

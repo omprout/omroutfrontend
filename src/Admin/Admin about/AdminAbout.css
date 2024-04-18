@@ -1,0 +1,31 @@
+.AdminAbout{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 2rem;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 200px; /* Adjust the max-width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.inputItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .4rem;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}

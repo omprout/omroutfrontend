@@ -1,0 +1,44 @@
+.Error404 {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourZeroFour {
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+}
+.navlink {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  color: #160ea0;
+  margin-bottom: 4rem;
+}
+.navlink:hover {
+  color: rgb(250, 215, 215);
+  transition: all 0.5s;
+}
+@media (max-width: 998px) {
+  .Error404 {
+    flex-wrap: wrap;
+  }
+  .fourZeroFour {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .ErrorImage{
+    height: fit-content;
+    width: fit-content;
+    overflow-x: hidden;
+  }
+}
