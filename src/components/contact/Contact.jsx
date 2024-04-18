@@ -132,10 +132,11 @@ const Contact = () => {
             />
 
             <textarea
+              className="custom-textarea"
               name=""
               id=""
-              cols="30"
-              rows="10"
+              cols="6"
+              rows="5"
               placeholder="Message"
               value={textarea}
               onChange={(e) => setTextarea(e.target.value)}
@@ -202,5 +203,8 @@ const Contact = () => {
     </div>
   );
 };
+
+
+
 
 export default Contact;

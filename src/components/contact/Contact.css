@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .contactHeading {
   display: flex;
   flex-direction: column;
@@ -19,6 +20,7 @@
   align-items: center;
   margin-top: 4rem;
 }
+
 .subHeading {
   color: #fff;
   font-family: "Poppins", Arial, sans-serif;
@@ -28,6 +30,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
 .heading {
   color: #000000;
   font-size: 40px;
@@ -36,6 +39,7 @@
   line-height: 1.5;
   font-family: "Poppins", Arial, sans-serif;
 }
+
 .contactParagraph {
   color: #fff;
   margin-bottom: 4rem;
@@ -44,7 +48,7 @@
   line-height: 1.8;
   font-weight: 400;
 }
-/* ######################################## */
+
 .contactMe {
   height: fit-content;
   width: 100%;
@@ -54,7 +58,7 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
-/* ########################################### */
+
 .contactField {
   height: fit-content;
   width: max-content;
@@ -68,6 +72,7 @@
   overflow: hidden;
   gap: 1rem;
 }
+
 .nameEmail {
   width: 100%;
   display: flex;
@@ -75,39 +80,13 @@
   align-items: center;
   gap: 1rem;
 }
-.name {
-  width: 100%;
-  height: 3rem;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-  font-weight: 400;
-  color: #999999;
-  border: 2px solid #b1b493;
-  border-radius: 2px;
-}
-.email {
-  width: 100%;
-  height: 3rem;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-  font-weight: 400;
-  color: #999999;
-  border: 2px solid #b1b493;
-  border-radius: 2px;
-}
+
+.name,
+.email,
 .subject {
   width: 100%;
   height: 3rem;
-  border: 2px solid #b1b493;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0.5rem;
   font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.8;
@@ -116,21 +95,22 @@
   border: 2px solid #b1b493;
   border-radius: 2px;
 }
+
 textarea {
-  width: 100%;
+  width: calc(100% - 40px);
   border: 2px solid #b1b493;
   border-radius: 2px;
   font-size: 16px;
-  padding: 10px 20px;
-  width: 100%;
+  padding: 10px;
   font-weight: 400;
-    line-height: 1.5;
-    margin: 0;
-    font-family: inherit;
-    box-sizing: border-box;
-    font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
 }
-.btn{
+
+.btn {
   background: #b1b493;
   border: 1px solid #b1b493 !important;
   color: #fff !important;
@@ -138,29 +118,28 @@ textarea {
   font-weight: 500;
   border-radius: 5px;
   box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
-  padding-left: 1rem !important;
-  padding-bottom: 1rem !important;
-  padding-top: 1rem !important;
-  padding-right: 1rem !important;
+  padding: 1rem;
   text-align: center;
   vertical-align: middle;
 }
+
 .btn.clicked {
-  background-color: #28a745; /* Green color */
+  background-color: #28a745;
 }
-/* ################################################ */
+
 .myAddress {
   height: fit-content;
   width: fit-content;
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   padding: 3rem;
   flex-direction: column;
   text-align: left;
 }
-.myAddresses{
+
+.myAddresses {
   display: flex;
   width: 21rem;
   height: 7.93rem;
@@ -170,9 +149,10 @@ textarea {
   font-weight: 400;
   color: #fff;
 }
+
 .icons {
-  height: 50px ;
-  width:50px ;
+  height: 50px;
+  width: 50px;
   background-color: #b1b493;
   margin-right: 8px;
   display: flex;
@@ -181,6 +161,7 @@ textarea {
   border-radius: 50%;
   color: #fff;
 }
+
 span {
   display: block;
   font-weight: 600;
@@ -189,32 +170,45 @@ span {
 }
 
 @media (max-width: 998px) {
-  .contact{
+  .contact {
     overflow-x: hidden;
   }
-
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .nameEmail {
     flex-direction: column;
   }
-  .contactField{
+  .contactField {
     min-width: 50%;
   }
-  .nameEmail{
+  .nameEmail {
     width: 70%;
   }
-  .subject{
+  .subject {
     width: 70%;
   }
 }
 
-.contact2{
+.contact2 {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(43deg,#4158d0 0%,#c850c0 46%,#ffcc70 100%);
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  textarea {
+    width: calc(100% - 10px);
+    padding: 6px;
+  }
 }
