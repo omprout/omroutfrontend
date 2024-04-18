@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
   const [showMediaIcons, setMediaIcons] = useState(false);
+
+  const handleToggleMediaIcons = () => {
+    setMediaIcons(!showMediaIcons);
+  };
+
   return (
     <div className="Navbar">
       <div className="navChild">
@@ -15,7 +21,7 @@ const Header = () => {
             <NavLink exact activeClassName to="/">Home</NavLink>
           </li>
           <li>
-          <NavLink exact activeClassName to="/About">About</NavLink>
+            <NavLink exact activeClassName to="/About">About</NavLink>
           </li>
           <li>
             <NavLink exact activeClassName to="/Skills">Skills</NavLink>
@@ -27,14 +33,16 @@ const Header = () => {
             <NavLink exact activeClassName to="/Contact">Contact</NavLink>
           </li>
         </ul>
-        <div
-          className="hamburger_menu"
-          onClick={() => setMediaIcons(!showMediaIcons)}
-        >
-          <GiHamburgerMenu />
-        </div>
+        {showMediaIcons ? (
+          <div className="cros_menu" onClick={handleToggleMediaIcons}>
+            <RxCross2 />
+          </div>
+        ) : (
+          <div className="hamburger_menu" onClick={handleToggleMediaIcons}>
+            <GiHamburgerMenu />
+          </div>
+        )}
       </div>
-
     </div>
   );
 };

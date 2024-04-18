@@ -138,6 +138,14 @@ ul > li > a:hover{
     font-size: 2rem;
     display: none;
   }
+  .cros_menu{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 10rem;
+    font-size: 2rem;
+    display: none;
+  }
   @media (max-width:998px){
  
     .list{
@@ -145,6 +153,10 @@ ul > li > a:hover{
 
     }
     .hamburger_menu {
+        display: inline-block;
+        right: 2rem;
+    }
+    .cros_menu {
         display: inline-block;
         right: 2rem;
     }
